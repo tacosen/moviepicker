@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Picker Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="mainContent">
+        <h1>Find your streaming pick</h1>
+        
+        <div class="section" id="step1">
+            <h2>What genres are on the table?</h2>
+            <p class="subheader">Pick genres that you're open to, that you like, and that you love.</p>
+            <div class="checkbox-group" id="genres">
+                <label>
+                    <input type="checkbox" value="Action">
+                    <span>Action</span>
+                </label>
+                <label><input type="checkbox" value="Animation"> Animation</label>
+                <label><input type="checkbox" value="Classics"> Classics</label>
+                <label><input type="checkbox" value="Comedy"> Comedy</label>
+                <label><input type="checkbox" value="Documentary"> Documentary</label>
+                <label><input type="checkbox" value="Drama"> Drama</label>
+                <label><input type="checkbox" value="Family"> Family</label>
+                <label><input type="checkbox" value="Fantasy"> Fantasy</label>
+                <label><input type="checkbox" value="Foreign Language"> Foreign Language</label>
+                <label><input type="checkbox" value="History"> History</label>
+                <label><input type="checkbox" value="Horror"> Horror</label>
+                <label><input type="checkbox" value="Musical"> Musical</label>
+                <label><input type="checkbox" value="Mystery"> Mystery</label>
+                <label><input type="checkbox" value="Romance"> Romance</label>
+                <label><input type="checkbox" value="Sci-Fi"> Sci-Fi</label>
+                <label><input type="checkbox" value="Superhero"> Superhero</label>
+                <label><input type="checkbox" value="Thriller"> Thriller</label>
+                <label><input type="checkbox" value="Western"> Western</label>
+            </div>
+            <button id="continueButton">Continue</button>
+        </div>
+
+        <div class="section hidden" id="step2">
+            <h2>What streaming services do you subscribe to?</h2>
+            <p class="subheader">We won't recommend a service that isn't on your list already.</p>
+            <div class="checkbox-group" id="streaming">
+                <label><input type="checkbox" value="AMC+"> AMC+</label>
+                <label><input type="checkbox" value="Amazon Prime"> Amazon Prime</label>
+                <label><input type="checkbox" value="Apple TV+"> Apple TV+</label>
+                <label><input type="checkbox" value="BET+"> BET+</label>
+                <label><input type="checkbox" value="BritBox"> BritBox</label>
+                <label><input type="checkbox" value="Crunchyroll"> Crunchyroll</label>
+                <label><input type="checkbox" value="Discovery+"> Discovery+</label>
+                <label><input type="checkbox" value="Disney+"> Disney+</label>
+                <label><input type="checkbox" value="ESPN+"> ESPN+</label>
+                <label><input type="checkbox" value="HBO Max"> HBO Max</label>
+                <label><input type="checkbox" value="Hulu"> Hulu</label>
+                <label><input type="checkbox" value="Netflix"> Netflix</label>
+                <label><input type="checkbox" value="Paramount+"> Paramount+</label>
+                <label><input type="checkbox" value="Peacock"> Peacock</label>
+                <label><input type="checkbox" value="Shudder"> Shudder</label>
+                <label><input type="checkbox" value="Starz"> Starz</label>
+                <label><input type="checkbox" value="Vidio"> Vidio</label>
+                <label><input type="checkbox" value="YouTube Premium"> YouTube Premium</label>
+            </div>
+            <button id="pickButton">Get a streaming pick</button>
+        </div>
+    </div>
+
+    <div class="container result-page hidden" id="result">
+        <h2>Your pick:</h2>
+        <p id="resultText"></p>
+        <div class="button-group">
+            <button id="shuffleButton">Shuffle</button>
+            <button id="startOverButton">Start over</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
